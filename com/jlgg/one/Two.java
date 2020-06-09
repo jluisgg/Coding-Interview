@@ -6,8 +6,7 @@ import java.util.Arrays;
  * Problem: Given two strings, write a method to decide if one is a permutation of the other.
  * <p>
  * Context:
- * A permutation also called an "arrangement number" or "order" is the rearrangement of the
- * elements of an ordered list S into a one-to-one correspondence with S itself.
+ * A permutation is a rearrangement of letters.
  * A string of length N has N! permutation.
  * Given ABC, the permutations: ABC, ACB, BAC, BCA, CBA, CAB
  * 3! = 3*2*1 = 6
