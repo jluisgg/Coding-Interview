@@ -21,9 +21,12 @@ public class Two {
      * O(a) + O(b) + O(a log a) + O(b log b) + O (a) = O(a + b) linear
      */
     static boolean isPermutation(String s1, String s2) {
+        if (s1.length() != s2.length()) {
+            return false;
+        }
+
         char[] s1Arr = s1.toCharArray();
         char[] s2Arr = s2.toCharArray();
-
         Arrays.sort(s1Arr);
         Arrays.sort(s2Arr);
 
@@ -31,7 +34,7 @@ public class Two {
     }
 
     public static void main(String[] args) {
-        String[][] inputs = {{"ABC", "ACB"}, {"ABC", "ABE"}, {"ABC", ""}};
+        String[][] inputs = {{"ABC", "ACB"}, {"ABC", "ABE"}, {"ABC", ""}, {"AACCE", "ACECA"}};
 
         StringBuilder sb;
         for (String[] input : inputs) {

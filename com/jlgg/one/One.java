@@ -47,6 +47,5 @@ public class One {
             }
             System.out.println(sb.toString());
         }
-
     }
 }
